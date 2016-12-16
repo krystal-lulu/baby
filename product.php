@@ -1,20 +1,9 @@
 <?php
-    echo '哈哈';
-    $conn=mysql_connect('127.0.0.1','root');
-    mysql_select_db('info');
-    mysql_query('set names utf8');
-    echo  $conn;
-    if($conn){
-        echo '连接成功';
-    }else{
-        echo '连接失败';
-    }
-//    $sql="INSERT INTO produce (age,height) VALUES ('18','180')";
-//    $res=mysql_query($sql);
-//   $sql="SELECT * FROM produce WHERE id=1";
-//    $res=mysql_query($sql);
-//    while ($res1=mysql_fetch_assoc($res)) {
-//        print_r($res1);
-//    }
-
+    $conn=mysqli_connect('127.0.0.1','root','');
+    mysqli_select_db($conn,'info');
+    mysqli_set_charset($conn,'utf8');
+    $sql1='SELECT * FROM product';
+    $result=mysqli_query($conn,$sql1);
+    $result = json_encode(mysqli_fetch_all($result,MYSQLI_ASSOC));
+    echo '{"id":"12","type":"arrival","intro":"Lightweight Foldable Easy Carry Baby Kids Stroller","imageUrl":"product1.jpg"}';
 ?>
