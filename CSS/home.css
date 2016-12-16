@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.banner{
+    width:100%;
+    overflow: hidden;
+    min-width: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+.banner .bigBox{
+    width: 400%;
+    height:calc(449/1920*80%);
+    min-width: 4000px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-left: 0;
+    transition: 0.2s linear margin-left ;
+
+}
+.banner .imgBox{
+    width: 25%;
+    min-width: 1000px;
+    float: left;
+}
+.banner .imgBox img{
+    width: 100%;
+    height:100%;
+}
+/*小圆点*/
+.pointGroup{
+    width:120px;
+    height: 36px;
+    background-color:#fff;
+    /*border:1px solid red;*/
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left:-60px;
+    border-radius:30px;
+}
+.pointGroup .point{
+    width: 15px;
+    height: 15px;
+    background-color: #0068b5;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+}
+.pointGroup .point:nth-child(1){
+    margin-left: 12.5px;
+}
+.pointGroup .point:nth-child(2){
+    margin-left: 25px;
+}
+.pointGroup .point:nth-child(3){
+    margin-left: 25px;
+}
+.pointGroup .active{
+    background-color: orange;
+}
+/*左边的按钮*/
+.leftBtn{
+    width: 52px;
+    height:104px;
+    background: url("../images/leftbig1.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top:-52px;
+    z-index: 2;
+}
+/*右边的按钮*/
+.rightBtn{
+    width: 52px;
+    height:104px;
+    background: url("../images/rightbig1.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top:-52px;
+    z-index: 2;
+}
+/*导航栏*/
+.naviBox{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 202px;
+    margin:0 auto;
+}
+.navi{
+    position: relative;
+    overflow: hidden;
+    top:50%;
+    margin-top:-45px;
+    /*left: 50%;*/
+    /*margin-left: -252px;*/
+}
+.navi section{
+    float: left;
+    margin-left:50px;
+}
+.navi div div{
+    width: 72px;
+    height: 72px;
+}
+.navi .l_left{
+    margin-left: 98px;
+}
+.navi div img{
+    width: 100%;
+    height:100%;
+}
+.navi section p{
+    text-align: center;
+}
+/*内容区域*/
+.main{
+    width: 1000px;
+    height:1839px;
+    margin:0 auto;
+}
+/*小标题*/
+.listTitle{
+    width: 100%;
+    height: 92px;
+    margin:0 auto;
+}
+.listTitle.one{
+    background: url('../images/title1.png') no-repeat;
+}
+/*商品展示*/
+.products{
+    width: 100%;
+    height:245px;
+    margin:0 auto;
+    position: relative;
+}
+/*展示的*/
+.showList{
+    width: 100%;
+    height:245px;
+    overflow: hidden;
+}
+/*商品列表*/
+.products .productsList{
+    width:1506px;
+    overflow: hidden;
+    -webkit-transition:0.1s ease-in margin-left;
+}
+.products li{
+    float:left;
+    margin-right: 25px;
+    width: 226px;
+    line-height: 30px;
+
+}
+.products li a{
+    font-size: 18px;
+    color:#0068B5;
+    text-align: center;
+}
+.products li p{
+    text-align: center;
+}
+.products li div{
+    width: 226px;
+    height: 169px;
+}
+.products li div img{
+   width: 100%;
+    height:100%;
+}
+
+/*last按钮*/
+.products .last{
+    background: url("../images/LeftBig.png");
+    width: 60px;
+    height:60px;
+    position: absolute;
+    left: -89px;
+    z-index: 999;
+    margin-top:-30px;
+    top:20%;
+}
+/*next按钮*/
+.products .next{
+    background: url("../images/RightBig.png");
+    width: 60px;
+    height:60px;
+    position: absolute;
+    right: -89px;
+    top:20%;
+    margin-top:-30px;
+    z-index: 999;
+}
+.shakehide{
+    overflow: hidden;
+}
+/*标题*/
+.listTitle.two{
+    background: url('../images/title2.png') no-repeat;
+    margin-top:30px;
+    height: 70px;
+}
+/*热销区*/
+.hotProducts{
+    width: 100%;
+    height:326px;
+}
+.hotProducts .star{
+    width:315px;
+    height: 146px;
+    margin-right:17px;
+    margin-bottom: 17px;
+    float: left;
+    position:relative;
+    background: url('../images/hotli.png') no-repeat;
+}
+/*热销产品里面的模块*/
+.hotProducts .star .intro{
+    margin-top: 27px;
+    width: 162px;
+    float: left;
+    margin-left: 18px;
+    font-size: 18px;
+    color: #000;
+    height: 49px;
+    overflow: hidden;
+}
+.hotProducts .star a{
+    background: url('../images/more.png') no-repeat;
+    width: 88px;
+    height: 30px;
+    top:91px;
+    left: 18px;
+    text-align: center;
+    position:absolute;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.hotProducts .starImg{
+    width: 124px;
+    height: 92px;
+    background:url('../img/product20.jpg') no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-right: 11px;
+    margin-top: 20px;
+}
+/*about标题*/
+.listTitle.three{
+    background: url('../images/title3.png') no-repeat;
+    margin-top:30px;
+    height: 70px;
+}
+.about{
+    width: 100%;
+    height:290px;
+}
+.about .aboutImg{
+    width: 391px;
+    height: 290px;
+    float: left;
+}
+.about .aboutImg .imgInfo{
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float: left;
+    width: 187px;
+    height:147px;
+}
+.about .aboutImg .imgInfo.one{
+    background: url('../img/about1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.about .aboutImg .imgInfo.two{
+    background: url('../img/about2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.about .aboutImg .imgInfo.three{
+    background: url('../img/about3.png') no-repeat;
+    background-size: 100% 100%;
+}
+.about .aboutImg .imgInfo.four{
+    background: url('../img/about4.png') no-repeat;
+    background-size: 100% 100%;
+}
+.about .info{
+    font-size: 18px;
+    color: #333;
+    margin-left: 20px;
+    float: left;
+    width: 549px;
+}
+.about a{
+    background: url('../images/more2.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 18px;
+    width: 126px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 52px;
+    margin-right: 14px;
+    margin-left: 20px;
+}
+/*按钮切换*/
+.toggle{
+    width: 100%;
+    height:43px;
+    margin-top:68px;
+}
+.tog{
+    height: 43px;
+    line-height: 43px;
+    padding-left: 25px;
+    margin-right: 25px;
+    padding-right: 25px;
+    background: #cfdce5;
+    border-radius: 25px;
+    float: left;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+.tog.active{
+    background-color: #0068b5;
+}
+/*热门信息*/
+.hotInfo{
+    width: 980px;
+    height:318px;
+    position: relative;
+    margin:0 auto;
+    margin-top:35px;
+}
+.hotInfo ul{
+    background: url('../images/indexcase.png') no-repeat;
+    width: 960px;
+    height: 289px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 29px;
+}
+.hotImg{
+    background: url('../images/pop.png') no-repeat;
+    width: 345px;
+    height: 230px;
+    position: absolute;
+    top: 29px;
+    right: 20px;
+}
+.hotInfo .circle{
+    background: url('../images/indexcaseback.png') no-repeat 3px 3px;
+    width: 27px;
+    height: 16px;
+    float:left;
+}

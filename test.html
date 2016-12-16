@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/angular-sanitize.js"></script>
+        <style>
+            .active{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+            }
+            .inactive{
+                width: 100px;
+                height: 100px;
+                background: green;
+            }
+        </style>
+    </head>
+    <body ng-app="myApp">
+    <input type="text" ng-model="name">
+    <div>
+        <test-Directive></test-Directive>
+    </div>
+    <div test-Directive></div>
+    <div class="test-Directive" ></div>
+    <!--  directive:test-Directive  -->
+    </body>
+    <script>
+        var app=angular.module('myApp',["ngSanitize"]);
+        app.directive('testDirective',function(){
+            return{
+                templateUrl:"head_common.html",
+    //              template:"<h1 class='active'><a href='#'>{{name}}</a></h1>",
+                restrict:'EACM',//元素、属性、类名、注释
+                replace:true
+
+            }
+        })
+    </script>
+</html>
