@@ -50,15 +50,16 @@ $(function(){
                 }
                 $('.CenterRight .link .page').empty();
                 $('.CenterRight .link .circle').empty();
+                $('.CenterRight .link .pageInfo').empty();
                 $.ajax({
                     url:'page.php',
                     data: {
                         info: 'page',
                     },
-                    success:function(message){
-
-
-                        var message=parseInt(message);
+                    dataType:"json",
+                    success:function(info){
+                        console.log(info)
+                        var message=parseInt(info.page);
                         //页面向右的偏移量
                         var offsetRight=4-(lastIndex-pageNum);
                         //页面向左的偏移量
@@ -130,10 +131,12 @@ $(function(){
                             }
                             $('.CenterRight .link .next').prepend('<span class="circle">...</span>');
 
-
-
-
                         }
+                        $('.CenterRight .link .pageInfo').append(
+                            'from <span>'+info.all+'</span>'
+                            + ' products '
+                            +pageNum+'/'+message
+                        )
                     }
                 })
             }

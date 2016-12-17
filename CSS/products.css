@@ -134,8 +134,13 @@ section .center{
 	color: #f6921c;
 }
 /*分页部分*/
-.CenterRight .link{
-	float: right;
+
+.CenterRight .link .pageInfo{
+	float: left;
+}
+.CenterRight .link .pageInfo{
+	font-weight: bold;
+	font-size: 17px;
 }
 .CenterRight .link .next{
 	color: #0068b7;

@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"微软雅黑";
+}
+iframe{
+	border:0;
+	margin:0;
+}
+.siteMap{
+	position:relative;
+}
+.siteMap .main{
+	width:1000px;
+	margin:0 auto;
+}
+.siteMap .main p{
+	font-size:24px;
+	margin-bottom: 30px;
+	margin-top:50px;
+}
+.siteMap .main span{
+	font-size:14px;
+	color:#7a7a7a;
+	margin-left:10px;
+}
+/*红字标题公共样式*/
+.siteMap .main .head{
+	margin-left:50px;
+	
+}
+.siteMap .main .head a{
+	text-decoration:none;
+	color:#d50505;
+	height:33px;
+	line-height: 33px;
+	display:block;
+	border-bottom:1px #cdcdcd solid;
+}
+.siteMap .main .head a:hover{
+	color:red;
+}
+.siteMap .main .head ul{
+	overflow: hidden;
+	margin:20px 0  20px 18px;
+}
+.siteMap .main .head ul li{
+	float:left;
+	list-style-type:none;
+	margin-right:100px ;
+}
+.siteMap .main .head ul li a{
+	color:black;
+	font-size:12px;
+	border:0;
+}
+.siteMap .main .head-products ul li{
+	text-decoration: underline;
+	margin-right:20px ;
+}
+.siteMap .main .head-products ul li a{
+	color:#919191;
+}
+.siteMap .main .head-products ul .lis{
+	text-decoration:none;
+}
+.siteMap .main .head-products ul .lis a{
+	color:black;
+}
+.siteMap .main .head-products ul .lis a:hover{
+	color:red;
+}

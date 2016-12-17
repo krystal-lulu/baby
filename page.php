@@ -5,6 +5,6 @@
     $row=mysqli_affected_rows($conn);
     $count=ceil($row/size);
     if($_GET['info']=='page'){
-        echo $count;
+        echo '{"page":'.$count.',"all":'.$row.'}';
     }
 ?>
