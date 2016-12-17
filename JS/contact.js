@@ -1,4 +1,21 @@
 
+var clickleft=document.getElementsByClassName('clickleft');
+var rightcontent=document.getElementsByClassName('rightcontent');
+
+for (var i = 0; i < clickleft.length; i++) {
+	clickleft[i].index=i;
+	clickleft[i].onclick=function(){
+		for (var i = 0; i < rightcontent.length; i++) {
+			rightcontent[i].style.display='none';
+		}
+		console.log(rightcontent[this.index])
+		rightcontent[this.index].style.display='block';
+		
+	}
+}
+
+
+
 var turnHide = document.querySelector(".leftBottom .turnBody .turnHide");
 var turnAll = document.querySelectorAll(" .leftBottom .turnBody .turnHide .turnPart");
 //----------------------------------轮播图--------------------------------

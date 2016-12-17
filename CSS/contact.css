@@ -23,22 +23,28 @@ iframe{
 	width: 100%;
 	height: 800px;
 }
-
 .About_box {
-	
 	width: 1000px;
 	margin: 0px auto;
-	/*border: 1px red solid;*/
-	overflow: hidden;
 }
-
+.About_nobi2{
+	opacity: 0;
+}
+.clickleft:hover .About_nobi2{
+	opacity:1;
+}
+.clickleft:hover span{
+	color: white;
+}
+.clickleft:hover .About_nobi{
+	opacity:0;
+}
 .About_left_sidebar {
 	width: 265px;
-	height: 824px;
 	border-radius: 10px;
 	background: white;
-	/*border: 1px red solid;*/
 	float: left;
+	margin-bottom: 50px;
 }
 .About_star {
 	height: 48px;
@@ -67,67 +73,7 @@ iframe{
 	position: absolute;top: 0;left:50px;font-size:20px;color:#0068b5; ;
 }
 
-.About_nobi2{
-	opacity: 0;
-}
-.clickleft:hover .About_nobi2{
-	opacity:1;
-}
-.clickleft:hover span{
-	color: white;
-}
-.clickleft:hover .About_nobi{
-	opacity:0;
-}
-/*右边显示内容 右边显示内容右边显示内容右边显示内容右边显示内容   */
-.About_content_Histroy {
-	float: right;
-	padding-top: 29px;
-	width: 700px;
-	border-radius: 10px;
-	background: white;
-	overflow: hidden;
-	/*border: 1px red solid;*/
-
-}
-
-.About_content_top {
-	margin-top: 13px;
-	margin-left: 26px;
-	margin-bottom: 30px;
-	width: 648px;
-	height: 47px;
-	background: #f5f8f9;
-}
-
-.About_content_top>span:nth-child(1) {
-	line-height: 47px;
-	color: #0068b5;
-	font-size: 24px;
-	margin-left: 10px
-}
-
-.About_content_top>span:nth-child(2) {
-	font-size: 14px;
-	color: #666666;
-	line-height: 47px;
-	float: right;
-}
-.About_p{
-	width: 648px;
-	margin-left: 26px;
-	color: #333333;
-	font-size: 18px;
-	line-height: 26px;
-	font-family: "微软雅黑";
-}
-
-
-.About_content_Histroy_img {
-	margin: 52px 0 150px 26px;
-	width: 507px;
-	height: 338px
-}
+/*轮播图      */
 .leftBottom {
 	width: 233px;
 	height: 440px;
@@ -229,3 +175,109 @@ iframe{
 	display:block;
 }
 
+/*右边显示内容 右边显示内容右边显示内容右边显示内容右边显示内容  ------------------------------------- */
+
+.About_content {
+	float: right;
+	padding-top: 29px;
+	width: 700px;
+	border-radius: 10px;
+	background: white;
+	margin-bottom: 50px;
+}
+.About_content_top {
+	margin-top: 13px;
+	margin-left: 26px;
+	width: 648px;
+	height: 47px;
+	background: #f5f8f9;
+}
+.About_content_top>span:nth-child(1) {
+	line-height: 47px;
+	color: #0068b5;
+	font-size: 24px;
+	margin-left: 10px
+}
+
+.About_content_top>span:nth-child(2) {
+	font-size: 14px;
+	color: #666666;
+	line-height: 47px;
+	float: right;
+}
+/*contact  info 显示容器  含地图区*/
+.Contact_KONIG{
+	width: 646px;
+	margin-left: 26px;
+}
+.Contact_KONIG>strong{
+	font-size: 24px;font-weight: bold;
+}
+.Contact_KONIG>span{
+	font-size: 14px;
+	line-height: 30px;
+}
+.Contact_KONIG>span>a{
+	color:blue;
+}
+.contact_map{
+	width: 550px;
+	height: 340px;margin-left: 26px;
+	margin-bottom: 150px;
+
+}
+.About_content_Histroy {
+	display: none;
+}
+
+.About_content_Concepts {
+	display: block  ;
+}
+
+
+/*contact online  容器*/
+.Contact_table{
+	width: 644px;
+	height:472px;
+	margin:0px 0 50px 26px;
+}
+.Contact_table>div{display: inline-block;margin:20px 0 0 0px;font-size: 8px;width: 311px}
+.Contact_table>div>input{
+	width: 269px;
+	height: 20px;
+	color: blue;
+	margin-top: 5px;
+}
+.Contact_table>div>span>{
+	
+}
+.Contact_textarea{
+	width: 590px;
+}
+.Contact_textarea>textarea{
+	width: 590px;
+	height: 100px;
+	margin-top: 5px;
+}
+.Contact_submit>li{display: inline-block;}
+.Contact_submit>li>input{
+	width: 127px ;
+	height:38px;
+	margin-top: 30px;
+	border: 1px orange solid;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.submit1{
+	background: orange;color:white;
+}
+.submit2{
+	background: white;color:orange;
+	margin-left: 30px;
+}
+
+
+
+
+
+/*/////////////////////////////*/

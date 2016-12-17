@@ -126,6 +126,67 @@ header .main .content .search img{
 	right:-1px;
 	top:-2px;
 }
+header .hider{
+	width:100%;
+	/*min-height:150px;*/
+	height:0;
+	/*background:lightgray;*/
+	/*display:none;*/
+	/*transition:all 0.5s linear;*/
+	transition:all 0.5s linear;
+	overflow:hidden;
+	position:absolute;
+	top:207px;
+	z-index: 1000;
+}
+
+header .hider .hiderMain{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+header .hider .hiderMain .hiderWide{
+	position:relative;
+	height:50px;
+	width:210px;
+	/*border:1px red solid;*/
+	float:left;
+	margin-top: 15px;
+}
+header .hider .hiderMain .hiderWide .log{
+	width:19px;
+	height: 19px;
+	position:absolute;
+	left:5px;
+	top:15px;
+	background: url(../images/nobi.png);
+}
+header .hider .hiderMain .hiderWide a{
+	line-height:50px;
+	padding-left:50px;
+	font-size:20px;
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*底部*/
 footer{
 	width:100%;
