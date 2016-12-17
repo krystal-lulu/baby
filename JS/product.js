@@ -9,7 +9,6 @@ $(function(){
     var newType='';
     // pageClick();//product跳转判断放开
     function pageClick(e){
-        var count=0;
         // console.log('e    ',typeof (e))
         console.log('dddddddddd',pageNum)
         var evobj=window.event||e;
@@ -149,49 +148,24 @@ $(function(){
                                     )
                             }
                             else{
-                                count++;
                                 console.log(pageNum)
-
-                                    if(!pageNum){
-                                        for(var i=firstIndex;i<=message;i++) {
-                                            if (i == count) {
-                                                //点击的页号变色
-                                                $('.CenterRight .link .page').append(
-                                                    '<a><span>|</span><span class="num active">' + i + '</span></a>'
-                                                )
-                                            } else {
-                                                $('.CenterRight .link .page').append(
-                                                    '<a><span>|</span><span class="num">' + i + '</span></a>'
-                                                )
-                                            }
+                                    for(var i=firstIndex;i<=message;i++) {
+                                        if (i == pageNum) {
+                                            //点击的页号变色
+                                            $('.CenterRight .link .page').append(
+                                                '<a><span>|</span><span class="num active">' + i + '</span></a>'
+                                            )
+                                        } else {
+                                            $('.CenterRight .link .page').append(
+                                                '<a><span>|</span><span class="num">' + i + '</span></a>'
+                                            )
                                         }
-                                        $('.CenterRight .link .pageInfo').append(
-                                            'from <span>' + info.all + '</span>'
-                                            + ' products '
-                                            + count + '/' + message
-                                        )
-                                    }else{
-                                        for(var i=firstIndex;i<=message;i++) {
-                                            if (i == pageNum) {
-                                                //点击的页号变色
-                                                $('.CenterRight .link .page').append(
-                                                    '<a><span>|</span><span class="num active">' + i + '</span></a>'
-                                                )
-                                            } else {
-                                                $('.CenterRight .link .page').append(
-                                                    '<a><span>|</span><span class="num">' + i + '</span></a>'
-                                                )
-                                            }
-                                        }
-                                        $('.CenterRight .link .pageInfo').append(
-                                            'from <span>'+info.all+'</span>'
-                                            + ' products '
-                                            +pageNum+'/'+message
-                                        )
                                     }
-
-
-
+                                    $('.CenterRight .link .pageInfo').append(
+                                        'from <span>'+info.all+'</span>'
+                                        + ' products '
+                                        +pageNum+'/'+message
+                                    )
                              }
                         }
 

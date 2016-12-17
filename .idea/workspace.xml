@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d71d52e-9087-4285-bf28-d8dd3f6bd800" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/singleProduct.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/products.css" afterPath="$PROJECT_DIR$/CSS/products.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/head_common.js" afterPath="$PROJECT_DIR$/JS/head_common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/product.js" afterPath="$PROJECT_DIR$/JS/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/page.php" afterPath="$PROJECT_DIR$/PHP/page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/product.php" afterPath="$PROJECT_DIR$/PHP/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/productTitle.php" afterPath="$PROJECT_DIR$/PHP/productTitle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/titleList.php" afterPath="$PROJECT_DIR$/PHP/titleList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/head_common.html" afterPath="$PROJECT_DIR$/head_common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,11 +55,26 @@
         <entry file="file://$PROJECT_DIR$/JS/product.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+              <caret line="155" column="48" lean-forward="false" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
-                <element signature="e#2652#7334#0" expanded="false" />
-                <element signature="e#10131#11907#0" expanded="false" />
+                <element signature="e#2631#7313#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding>
+                <marker date="1481984851000" expanded="true" signature="130:170" ph="SELECT * FRO... product" />
+                <marker date="1481984851000" expanded="true" signature="422:455" ph="SELECT * FRO... product" />
+                <marker date="1481984851000" expanded="true" signature="422:468" ph="SELECT * FRO... product" />
+                <marker date="1481984851000" expanded="true" signature="422:480" ph="SELECT * FRO... product" />
+                <marker date="1481984851000" expanded="true" signature="422:525" ph="SELECT * FRO... product" />
               </folding>
             </state>
           </provider>
@@ -121,8 +128,8 @@
         <option value="$PROJECT_DIR$/PHP/titleList.php" />
         <option value="$PROJECT_DIR$/PHP/singleProduct.php" />
         <option value="$PROJECT_DIR$/PHP/productTitle.php" />
-        <option value="$PROJECT_DIR$/PHP/product.php" />
         <option value="$PROJECT_DIR$/PHP/page.php" />
+        <option value="$PROJECT_DIR$/PHP/product.php" />
         <option value="$PROJECT_DIR$/JS/product.js" />
       </list>
     </option>
@@ -135,8 +142,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="116" />
+    <option name="x" value="-16" />
+    <option name="y" value="144" />
     <option name="width" value="1646" />
     <option name="height" value="950" />
   </component>
@@ -229,10 +236,7 @@
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.productTitle.php">
-    <configuration default="false" name="head_common.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/baby/head_common.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHP Script.product.php">
     <configuration default="false" name="productTitle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/productTitle.php">
       <method />
     </configuration>
@@ -243,6 +247,9 @@
       <method />
     </configuration>
     <configuration default="false" name="product.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="product.js" working-dir="$PROJECT_DIR$/JS">
+      <method />
+    </configuration>
+    <configuration default="false" name="product.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/product.php">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -302,19 +309,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.head_common.html" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.titleList.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.singleProduct.php" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.product.js" />
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.titleList.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.singleProduct.php" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.product.js" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.product.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.product.js" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.singleProduct.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.titleList.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.head_common.html" />
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.product.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.product.js" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.singleProduct.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.titleList.php" />
       </list>
     </recent_temporary>
   </component>
@@ -330,15 +337,15 @@
       <updated>1481870042592</updated>
       <workItem from="1481870043939" duration="19066000" />
       <workItem from="1481936680379" duration="8119000" />
-      <workItem from="1481944974780" duration="20088000" />
+      <workItem from="1481944974780" duration="20838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47273000" />
+    <option name="totallyTimeSpent" value="48023000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="116" width="1646" height="950" extended-state="0" />
+    <frame x="-16" y="144" width="1646" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -400,8 +407,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2652#7334#0" expanded="false" />
-            <element signature="e#10131#11907#0" expanded="false" />
+            <element signature="e#2631#7313#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,17 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="61" />
-          <folding>
-            <marker date="1481979451000" expanded="true" signature="130:170" ph="SELECT * FRO... product" />
-            <marker date="1481979451000" expanded="true" signature="367:411" ph="SELECT * FRO... product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -656,14 +651,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <marker date="1481984851000" expanded="true" signature="130:170" ph="SELECT * FRO... product" />
+            <marker date="1481984851000" expanded="true" signature="422:455" ph="SELECT * FRO... product" />
+            <marker date="1481984851000" expanded="true" signature="422:468" ph="SELECT * FRO... product" />
+            <marker date="1481984851000" expanded="true" signature="422:480" ph="SELECT * FRO... product" />
+            <marker date="1481984851000" expanded="true" signature="422:525" ph="SELECT * FRO... product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS/product.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+          <caret line="155" column="48" lean-forward="false" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2652#7334#0" expanded="false" />
-            <element signature="e#10131#11907#0" expanded="false" />
+            <element signature="e#2631#7313#0" expanded="false" />
           </folding>
         </state>
       </provider>
