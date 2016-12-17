@@ -42,6 +42,9 @@ section .center{
 	border-top:1px dashed #e5e5e5;
 	border-bottom:1px dashed #e5e5e5;
 }
+.sidebar .nav .ProductsList .title{
+
+}
 .sidebar .nav .ProductsList a{
 	color: #0068b7;
 }

@@ -1,0 +1,242 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+iframe{
+	border:0;
+}
+.About_all {
+	background: url(../images/background.png);
+	width: 100%;
+	overflow: hidden;
+	padding:30px 0 40px 0px;
+}
+
+.left_bg {
+	background: orange;
+	color: white;
+}
+
+.About_bg {
+	width: 100%;
+	height: 800px;
+}
+
+.About_box {
+	
+	width: 1000px;
+	margin: 0px auto;
+	/*border: 1px red solid;*/
+}
+
+.About_left_sidebar {
+	width: 265px;
+	height: 824px;
+	border-radius: 10px;
+	background: white;
+	/*border: 1px red solid;*/
+	float: left;
+}
+.star {
+	height: 48px;
+	text-align: center;
+	padding-top: 40px;
+}
+.star>p {
+	margin-top: -30px;
+	font-size: 20px
+}
+.About_left_sidebar>ul>a>li {
+	margin-left: 14px;
+	list-style: none;
+	line-height: 61px;
+	width: 235px;
+	height: 61px;
+	color: #0068b5;
+	border-bottom: 1px dashed lightgray;
+	/*border-top: 1px dashed gray;*/
+	position: relative;
+	
+}
+.About_left_sidebar>ul>a>li>img:nth-child(2){
+	position: absolute;top:23px; left:10px;
+}
+.About_left_sidebar>ul>a>li>span{
+	position: absolute;top: 0;left:50px;font-size:20px;color:#0068b5; ;
+}
+
+.About_nobi2{
+	opacity: 0;
+}
+/*.clickleft:hover .About_nobi2{
+	opacity:1;
+}
+.clickleft:hover span{
+	color: white;
+}
+.clickleft:hover .About_nobi{
+	opacity:0;
+}*/
+/*轮播图    */
+.About_left_cutimg {
+	width: 235px;
+	height: 440px;
+	background-color: #f5f8f9;
+	border-radius: 10px;
+	margin-left: 15px;
+	margin-top: 50px;
+	/*overflow: hidden;*/
+}
+
+.About_left_NewProducts {
+	padding: 40px 0 0 10px;
+	font-size: 20px
+}
+.About_imgs_box{
+	width: 2250px;
+	transition: 0.5s margin linear;
+	overflow:hidden;
+}
+.About_imgs_box a{
+	float:left;
+}
+.About_cut_pic{
+	position: relative;
+}
+.About_imgs {
+	width: 150px;
+	height: 115px;
+	margin: 30px 0 0 40px;
+	overflow: hidden;
+}
+
+.about_imgs{
+	width: 150px;
+	height: 115px;
+	margin:0;
+	border: 0;
+}
+.About_btn{
+	z-index: 20;
+	position: absolute;
+	top:17%;
+}
+.About_title>ul>li{
+	width: 210px;
+	float:left;
+}
+.About_title>ul{
+	width: 3360px;
+	height:200px;
+	transition: 0.5s margin linear;
+	
+}
+.About_title{
+	width: 210px;
+	overflow:hidden;
+	
+}
+
+.About_left {
+	left: 13%;
+}
+
+.About_right {
+	right: 13%;
+}
+
+.About_shopping_title {
+	width: 200px;
+	height: 124px;
+	margin: 20px 0 0 10px;
+	position:relative;
+}
+.About_shopping_title>a {
+	font-size: 17px;
+	line-height: 20px;
+	color: black
+}
+
+.About_shopping_title>p {
+	font-size: 15px;
+	line-height: 20px
+}
+
+.About_Readmore {
+	margin: 20px 0 0 100px;
+	color: #f6921c;
+}
+/*右边显示内容 右边显示内容右边显示内容右边显示内容右边显示内容   */
+
+.About_content_Histroy,.About_content_Concepts,.About_content_Scoial {
+	float: right;
+	padding-top: 29px;
+	width: 700px;
+	border-radius: 10px;
+	background: white;
+}
+
+.About_content_top {
+	margin-top: 13px;
+	margin-left: 26px;
+	margin-bottom: 30px;
+	width: 648px;
+	height: 47px;
+	background: #f5f8f9;
+}
+
+.About_content_top>span:nth-child(1) {
+	line-height: 47px;
+	color: #0068b5;
+	font-size: 24px;
+	margin-left: 10px
+}
+
+.About_content_top>span:nth-child(2) {
+	font-size: 14px;
+	color: #666666;
+	line-height: 47px;
+	float: right;
+}
+
+.About_content_Histroy {
+	display: block;
+}
+
+.About_content_Concepts,.About_content_Scoial {
+	display: none;
+}
+
+.About_content_Concepts>p,.About_content_Scoial>p,.About_content_Histroy>p {
+	width: 648px;
+	margin-left: 26px;
+	color: #333333;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: "微软雅黑";
+}
+
+
+.About_content_Histroy_img {
+	margin: 52px 0 150px 26px;
+	width: 507px;
+	height: 338px
+}
+
+.Abput_content_Concepts_img {
+	margin: 52px 0 50px 26px;
+	width: 450px;
+	height: 303px
+}
+
+.About_content_Scoial_img {
+	margin: 52px 0 50px 26px;
+	width: 523px;
+	height: 500px
+}
+
+
+
+/*/////////////////////////////*/

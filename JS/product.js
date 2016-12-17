@@ -31,7 +31,7 @@ $(function(){
         }
         $('.Details').empty();
         $.ajax({
-            url:'product.php',
+            url:'PHP/product.php',
             data:{
                 info:'dataInfo',
                 num:pageNum,
@@ -52,7 +52,7 @@ $(function(){
                 $('.CenterRight .link .circle').empty();
                 $('.CenterRight .link .pageInfo').empty();
                 $.ajax({
-                    url:'page.php',
+                    url:'PHP/page.php',
                     data: {
                         info: 'page',
                     },
@@ -144,5 +144,37 @@ $(function(){
         init=false;
     }
     $('.CenterRight .link .page').on('click',pageClick);
-
+    // function prolistClick(){
+    //     var type=$(this).attr('id');
+    //     $.ajax({
+    //         url:'PHP/productTitle.php',
+    //         data:{
+    //             type:type,
+    //         },
+    //         dataType:'json',
+    //         success:function (mesg) {
+    //
+    //         }
+    //     })
+    //     switch (type){
+    //         case 'feeding':;
+    //         break;
+    //         case 'clothing':console.log(type);
+    //         break;
+    //         case 'nursery':console.log(type);
+    //         break;
+    //         case 'playtime':console.log(type);
+    //         break;
+    //         case 'gear':console.log(type);
+    //         break;
+    //         case 'bathing':console.log(type);
+    //         break;
+    //         case 'brand':console.log(type);
+    //         break;
+    //         case 'arrivals':console.log(type);
+    //         break;
+    //     }
+    //     // console.log($(this).attr('id'))
+    // }
+    // $('.ProductsList').on('click',prolistClick)
 })
