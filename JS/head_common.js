@@ -1,6 +1,6 @@
 var navArr = document.querySelectorAll(".navs .navi");
 var hider = document.querySelector(".hider");
-var classVal = hider.getAttribute("class");
+// var classVal = hider.getAttribute("class");
 var Timer;
 for(var i = 1; i < navArr.length; i++) {
 	navArr[i].index = i;

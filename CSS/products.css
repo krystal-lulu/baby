@@ -51,7 +51,7 @@ section .center{
 .sidebar .nav .ProductsList:hover span{
 	color: #f6921c;
 }
-.sidebar .nav .ProductsList:nth-child(1){
+.sidebar .nav .ProductsHeader{
 	height: 41px;
 	color: black;
 	font-size: 18px;
@@ -78,6 +78,9 @@ section .center{
 }
 .sidebar .nav .NavHid{
 	display: none;
+}
+.sidebar .nav .NavHid.active{
+	display: block;
 }
 /*右侧边栏*/
 .CenterRight{

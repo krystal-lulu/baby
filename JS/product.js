@@ -6,10 +6,17 @@ $(function(){
     var lastIndex=10;
     var firstIndex=1;
     var pageNum=1;
-    pageClick();
+    var newType='';
+    // pageClick();//product跳转判断放开
     function pageClick(e){
+        var count=0;
+        // console.log('e    ',typeof (e))
+        console.log('dddddddddd',pageNum)
         var evobj=window.event||e;
         _this=evobj.target;
+        if(typeof (e)=="string"){
+            newType=e;
+        }
         if(!init){
             //检测分页的最后一个显示的数字
             var len=$('.CenterRight .link .page a').length;
@@ -33,11 +40,12 @@ $(function(){
         $.ajax({
             url:'PHP/product.php',
             data:{
-                info:'dataInfo',
                 num:pageNum,
+                type:newType,
             },
             dataType:"json",
             success:function(json){
+                // console.log('sssss',json[0].type)
                 for(var i=0;i<json.length;i++){
                     $('.Details').append(
                         '<div class="ProductLis">'
@@ -54,127 +62,187 @@ $(function(){
                 $.ajax({
                     url:'PHP/page.php',
                     data: {
-                        info: 'page',
+                        type: newType,
                     },
                     dataType:"json",
                     success:function(info){
-                        console.log(info)
+                        // console.log(info)
+                        console.log('pageNum',pageNum)
                         var message=parseInt(info.page);
-                        //页面向右的偏移量
-                        var offsetRight=4-(lastIndex-pageNum);
-                        //页面向左的偏移量
-                        var offsetLeft=6-(pageNum-firstIndex);
-                        //如果向右的偏移量大于0
-                        if(offsetRight>0){
-                            //如果最后一页加上偏移量大于总页数
-                            if((lastIndex+offsetRight)>message){
-                                //偏移量为总页数减去最后一页
-                                offsetRight=message-lastIndex;
-                            }
-                            firstIndex+=offsetRight;
-                        }else{
-                            offsetRight=0;
-                        }
-                        //如果向左的偏移量大于0
-                        if(offsetLeft>0){
-                            //如果显示的第一页减去向左偏移量大于0
-                            if((firstIndex-offsetLeft)>0){
-                                firstIndex-=offsetLeft;
-                                lastIndex-=offsetLeft;
-                            }else{
-                                //如果第一页减去偏移量小于0 说明越界了
-                                firstIndex=1;
-                                //越界的时候处理最后一页判断
-                                lastIndex=10;
-                            }
-                        }else{
-                            offsetLeft=0;
-                        }
-                        // console.log('lastIndex   ',lastIndex);
-                        // console.log('pageNum   ',pageNum);
-                        //如果页数大于最后显示页数减去四页 则显示后面的页数
-                        function createlink(i){
-                            if(i==pageNum){
-                                //点击的页号变色
-                                $('.CenterRight .link .page').append(
-                                    '<a><span>|</span><span class="num active">'+i+'</span></a>'
-                                )
-                            }else{
-                                $('.CenterRight .link .page').append(
-                                    '<a><span>|</span><span class="num">'+i+'</span></a>'
-                                )
-                            }
-                        }
-                        if(pageNum>(lastIndex-4)){
-                            for(var i=firstIndex;i<=lastIndex+offsetRight;i++){
-                                createlink(i);
-                            }
-                            if( offsetRight!=message-lastIndex){
-                                  $('.CenterRight .link .next').prepend('<span class="circle">...</span>');
-                            }
-                            $('.CenterRight .link .last').prepend('<span class="circle">...</span>');
+                            if(message>=10){
+                                    //页面向右的偏移量
+                                    var offsetRight=4-(lastIndex-pageNum);
+                                    //页面向左的偏移量
+                                    var offsetLeft=6-(pageNum-firstIndex);
+                                    //如果向右的偏移量大于0
+                                    if(offsetRight>0){
+                                        //如果最后一页加上偏移量大于总页数
+                                        if((lastIndex+offsetRight)>message){
+                                            //偏移量为总页数减去最后一页
+                                            offsetRight=message-lastIndex;
+                                        }
+                                        firstIndex+=offsetRight;
+                                    }else{
+                                        offsetRight=0;
+                                    }
+                                    //如果向左的偏移量大于0
+                                    if(offsetLeft>0){
+                                        //如果显示的第一页减去向左偏移量大于0
+                                        if((firstIndex-offsetLeft)>0){
+                                            firstIndex-=offsetLeft;
+                                            lastIndex-=offsetLeft;
+                                        }else{
+                                            //如果第一页减去偏移量小于0 说明越界了
+                                            firstIndex=1;
+                                            //越界的时候处理最后一页判断
+                                            lastIndex=10;
+                                        }
+                                    }else{
+                                        offsetLeft=0;
+                                    }
+                                    // console.log('lastIndex   ',lastIndex);
+                                    // console.log('pageNum   ',pageNum);
+                                    //如果页数大于最后显示页数减去四页 则显示后面的页数
+                                    function createlink(i){
+                                        if(i==pageNum){
+                                            //点击的页号变色
+                                            $('.CenterRight .link .page').append(
+                                                '<a><span>|</span><span class="num active">'+i+'</span></a>'
+                                            )
+                                        }else{
+                                            $('.CenterRight .link .page').append(
+                                                '<a><span>|</span><span class="num">'+i+'</span></a>'
+                                            )
+                                        }
+                                    }
+                                    if(pageNum>(lastIndex-4)){
+                                        for(var i=firstIndex;i<=lastIndex+offsetRight;i++){
+                                            createlink(i);
+                                        }
+                                        if( offsetRight!=message-lastIndex){
+                                            $('.CenterRight .link .next').prepend('<span class="circle">...</span>');
+                                        }
+                                        $('.CenterRight .link .last').prepend('<span class="circle">...</span>');
 
-                        }else{
-                            //向左偏移
-                            if(firstIndex>1&&offsetLeft>0){
-                                for(var i=firstIndex;i<=lastIndex;i++){
-                                    createlink(i);
-                                }
-                            }else{
-                                //不偏移
-                                for(var i=firstIndex;i<=lastIndex;i++){
-                                    createlink(i);
-                                }
-                            }
-                            if(firstIndex>1){
-                                $('.CenterRight .link .last').prepend('<span class="circle">...</span>');
-                            }
-                            $('.CenterRight .link .next').prepend('<span class="circle">...</span>');
+                                    }else{
+                                        //向左偏移
+                                        if(firstIndex>1&&offsetLeft>0){
+                                            for(var i=firstIndex;i<=lastIndex;i++){
+                                                createlink(i);
+                                            }
+                                        }else{
+                                            //不偏移
+                                            for(var i=firstIndex;i<=lastIndex;i++){
+                                                createlink(i);
+                                            }
+                                        }
+                                        if(firstIndex>1){
+                                            $('.CenterRight .link .last').prepend('<span class="circle">...</span>');
+                                        }
+                                        $('.CenterRight .link .next').prepend('<span class="circle">...</span>');
 
+                                    }
+                                    $('.CenterRight .link .pageInfo').append(
+                                        'from <span>'+info.all+'</span>'
+                                        + ' products '
+                                        +pageNum+'/'+message
+                                    )
+                            }
+                            else{
+                                count++;
+                                console.log(pageNum)
+
+                                    if(!pageNum){
+                                        for(var i=firstIndex;i<=message;i++) {
+                                            if (i == count) {
+                                                //点击的页号变色
+                                                $('.CenterRight .link .page').append(
+                                                    '<a><span>|</span><span class="num active">' + i + '</span></a>'
+                                                )
+                                            } else {
+                                                $('.CenterRight .link .page').append(
+                                                    '<a><span>|</span><span class="num">' + i + '</span></a>'
+                                                )
+                                            }
+                                        }
+                                        $('.CenterRight .link .pageInfo').append(
+                                            'from <span>' + info.all + '</span>'
+                                            + ' products '
+                                            + count + '/' + message
+                                        )
+                                    }else{
+                                        for(var i=firstIndex;i<=message;i++) {
+                                            if (i == pageNum) {
+                                                //点击的页号变色
+                                                $('.CenterRight .link .page').append(
+                                                    '<a><span>|</span><span class="num active">' + i + '</span></a>'
+                                                )
+                                            } else {
+                                                $('.CenterRight .link .page').append(
+                                                    '<a><span>|</span><span class="num">' + i + '</span></a>'
+                                                )
+                                            }
+                                        }
+                                        $('.CenterRight .link .pageInfo').append(
+                                            'from <span>'+info.all+'</span>'
+                                            + ' products '
+                                            +pageNum+'/'+message
+                                        )
+                                    }
+
+
+
+                             }
                         }
-                        $('.CenterRight .link .pageInfo').append(
-                            'from <span>'+info.all+'</span>'
-                            + ' products '
-                            +pageNum+'/'+message
-                        )
-                    }
+
                 })
             }
         })
         init=false;
     }
     $('.CenterRight .link .page').on('click',pageClick);
-    // function prolistClick(){
-    //     var type=$(this).attr('id');
-    //     $.ajax({
-    //         url:'PHP/productTitle.php',
-    //         data:{
-    //             type:type,
-    //         },
-    //         dataType:'json',
-    //         success:function (mesg) {
-    //
-    //         }
-    //     })
-    //     switch (type){
-    //         case 'feeding':;
-    //         break;
-    //         case 'clothing':console.log(type);
-    //         break;
-    //         case 'nursery':console.log(type);
-    //         break;
-    //         case 'playtime':console.log(type);
-    //         break;
-    //         case 'gear':console.log(type);
-    //         break;
-    //         case 'bathing':console.log(type);
-    //         break;
-    //         case 'brand':console.log(type);
-    //         break;
-    //         case 'arrivals':console.log(type);
-    //         break;
-    //     }
-    //     // console.log($(this).attr('id'))
-    // }
-    // $('.ProductsList').on('click',prolistClick)
+    $.ajax({
+        url:'PHP/productTitle.php',
+        dataType:'json',
+        success:function(json){
+            for(var i=0;i<json.length;i++){
+                $('.ProductsNav').append(
+                    '<div class="listBox">'
+                        +'<div class="ProductsList" id="'+json[i].type+'">'
+                            + '<a href="#">'
+                                + '<img src="images/'+json[i].imgUrl+'" width="36px"/>'
+                                +'<span>'+json[i].title+'</span>'
+                            +'</a>'
+                        +'</div>'
+                        +'<div class="NavHid" ></div>'
+                    +'</div>'
+
+                )
+            }
+            $('.ProductsNav .listBox').on('click',function(e) {
+                var evObj=window.event||e;
+                var target=evObj.currentTarget;
+                var type=$(target).find('.ProductsList').attr('id');
+                // console.log('type',type)
+                pageClick(type);
+                $.ajax({
+                    url:'PHP/titleList.php',
+                    data:{
+                        id:type,
+                    },
+                    dataType:'json',
+                    success:function (json) {
+                        $('.NavHid').empty();
+                        for(var i=0;i<json.length;i++){
+                            $('.NavHid').append(
+                                '<a href="#"><li class="ProductMenu"><span>'+json[i].list+'</span></li></a>'
+                            )
+                        }
+                        $(target).find($('.NavHid')).toggleClass('active');
+                        $(target).siblings().find($('.NavHid')).removeClass('active');
+                    }
+                })
+            });
+        }
+    })
 })
