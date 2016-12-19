@@ -7,7 +7,7 @@ $(function(){
     var firstIndex=1;
     var pageNum=1;
     var newType='';
-    pageClick();//product跳转判断放开
+    // pageClick();//product跳转判断放开
     function pageClick(e){
         var evobj=window.event||e;
         _this=evobj.target;
@@ -215,4 +215,29 @@ $(function(){
             });
         }
     })
+    var url=window.location.href;
+    console.log(url.split('?')[1])
+    var id=url.split('?')[1];
+    if(url.split('?')[1]){
+        $.ajax({
+            url:'PHP/titleList.php',
+            data:{
+                id:id,
+            },
+            dataType:'json',
+            success:function (json) {
+                // console.log(json)
+                $('.NavHid').empty();
+                for(var i=0;i<json.length;i++){
+                    $('.NavHid').append(
+                        '<a href="#"><li class="ProductMenu"><span>'+json[i].list+'</span></li></a>'
+                    )
+                }
+                $("#"+id).siblings().toggleClass('active');
+                pageClick(id);
+            }
+        })
+    }else{
+        pageClick();
+    }
 })

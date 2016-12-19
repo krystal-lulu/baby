@@ -98,28 +98,31 @@
 .main .naviBox .navi{
     position: relative;
     overflow: hidden;
-    top:50%;
+    top:30%;
     margin-top:-45px;
-    /*left: 50%;*/
-    /*margin-left: -252px;*/
+    margin:0 auto;
+    width: 90%;
 }
-.navi section{
+.main .naviBox  .navi a{
     float: left;
-    margin-left:50px;
+    margin:0 15px;
+    color:#0068B5;
 }
-.navi div div{
+.naviBox .navi div {
     width: 72px;
     height: 72px;
+    margin:0 auto;
 }
-.navi .l_left{
-    margin-left: 98px;
-}
+/*.navi section:nth-child(1){*/
+    /*margin-left: 98px;*/
+/*}*/
 .navi div img{
     width: 100%;
     height:100%;
 }
-.navi section p{
+.navi a p{
     text-align: center;
+    margin-top:10px;
 }
 /*内容区域*/
 .main{

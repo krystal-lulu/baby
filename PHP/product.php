@@ -1,7 +1,7 @@
 <?php
     include('common.php');
-    $num=$_GET['num'];
-    $type=$_GET['type'];
+    $num=isset($_GET['num'])?$_GET['num']:1;
+    $type=isset($_GET['type'])?$_GET['type']:'';
     $start=($num-1)*size;
     if($_GET['type']==''){
         $sql1="SELECT * FROM product LIMIT $start".','.size;

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Products</title>
+		<link rel="shortcut icon" href="logo.ico">
+		<link rel="stylesheet" href="CSS/head_common.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/productpage.css"/>
+		<script type="text/javascript" src="JS/jquery.min.js"></script>
+		<script src="JS/angular.min.js"></script>
+		<script src="JS/angular-sanitize.js"></script>
+		<script type="text/javascript" src="JS/productpage.js"></script>
+	</head>
+	<body ng-app="myApp">
+		<!--头部+导航栏-->
+		<ab-Tl></ab-Tl>
+		<!--中部--> 
+		<section>
+			<div class="center">
+				<!--左侧产品导航栏-->
+				<div class="sidebar">
+					<div class="nav">
+						<!--Products-->
+						<div class="ProductsHeader">Products</div>
+						<div class="ProductsNav">
+							<!--Baby Feeding-->
+							<div class="ProductsList">
+							<a href="#">
+								<img src="images/nav1.png" width="36px"/>
+								<span>Baby Feeding</span>
+							</a>
+						</div>
+							<div class="NavHid">
+								<a href="#"><li class="ProductMenu"><span>Bottles&Nipples</span></li></a>
+								<a href="#"><li class="ProductMenu">Sippy Cups</li></a>
+								<a href="#"><li class="ProductMenu">Utensils</li></a>
+								<a href="#"><li class="ProductMenu">Pacifier</li></a>
+								<a href="#"><li class="ProductMenu">Bibs</li></a>
+								<a href="#"><li class="ProductMenu">Dinning Chair</li></a>
+								<a href="#"><li class="ProductMenu">Breast</li></a>
+								<a href="#"><li class="ProductMenu">Feeding Accessories</li></a>
+							</div>
+							<!--Baby Clothing-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav2.png" width="36px"/>
+									<span>Baby Clothing</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Clothing Gift Sets</li>
+								<li class="ProductMenu">Footwear</li>
+								<li class="ProductMenu">One Pieces&Bodysuits</li>
+								<li class="ProductMenu">Tops&Bottoms</li>
+								<li class="ProductMenu">Blankets</li>
+								<li class="ProductMenu">Sleepwear&Swaddle</li>
+								<li class="ProductMenu">Robes&Hooded Towels</li>
+								<li class="ProductMenu">Mumy Bags</li>
+								<li class="ProductMenu">Socks</li>
+								<li class="ProductMenu">Other Accessories</li>
+							</div>
+							<!--Baby Nursery-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav3.png" width="36px"/>
+									<span>Baby Nursery</span>
+								</a>	
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Crib Bedding</li>
+								<li class="ProductMenu">Furniture</li>
+								<li class="ProductMenu">Sleep Comfort</li>
+								<li class="ProductMenu">Monitors</li>
+								<li class="ProductMenu">Home Safety</li>
+								<li class="ProductMenu">Nursery accessories</li>
+							</div>
+							<!--Baby Playtime-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav4.png" width="36px"/>
+									<span>Baby Playtime</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Rattles</li>
+								<li class="ProductMenu">Stacking Cups</li>
+								<li class="ProductMenu">Wooden Toys</li>
+								<li class="ProductMenu">Plush Toys</li>
+								<li class="ProductMenu">Mobiles</li>
+								<li class="ProductMenu">Playgyms&Mats</li>
+								<li class="ProductMenu">Crib,Stroller&Car seat Toys</li>
+								<li class="ProductMenu">Ride-ons&Rocking Horses</li>
+								<li class="ProductMenu">Out Door </li>
+								<li class="ProductMenu">Other Toys</li>
+							</div>
+							<!--Baby Gear-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav5.png" width="36px"/>
+									<span>Baby Gear</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Bouncers&Rockers</li>
+								<li class="ProductMenu">Swings&Jumpers</li>
+								<li class="ProductMenu">Activity Centers</li>
+								<li class="ProductMenu">Walkers</li>
+								<li class="ProductMenu">Playyards</li>
+								<li class="ProductMenu">Tricycles</li>
+								<li class="ProductMenu">Carriers</li>
+								<li class="ProductMenu">Strollers</li>
+								<li class="ProductMenu">Car Seats</li>
+							</div>
+							<!--Baby Bathing-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav6.png" width="36px"/>
+									<span>Baby Bathing</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Bath Tub</li>		
+								<li class="ProductMenu">Potty Training</li>
+								<li class="ProductMenu">Bath Satety</li>		
+								<li class="ProductMenu">Bath Toys</li>	
+								<li class="ProductMenu">Bath Accessories</li>
+							</div>
+							<!--Brand-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav7.png" width="36px"/>
+									<span>Brand</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Mayblon</li>
+								<li class="ProductMenu">KonigKids</li>
+								<li class="ProductMenu">Tinbo Toys</li>
+								<li class="ProductMenu">Jungle Baby</li>
+							</div>
+							<!--New Arrivals-->
+							<div class="ProductsList">
+								<a href="#">
+									<img src="images/nav8.png" width="36px"/>
+									<span>New Arrivals</span>
+								</a>
+							</div>
+							<div class="NavHid">
+								<li class="ProductMenu">Spring</li>
+								<li class="ProductMenu">Summer</li>
+								<li class="ProductMenu">Autumn</li>
+								<li class="ProductMenu">Winter</li>
+							</div>
+						</div>
+					</div>
+					<div class="NavImg">
+						<img src="img/pic.png" width="100%"/>
+					</div>
+				</div>
+				<!-- 右侧产品栏 -->
+				<div class="CenterRight">
+					<!-- 头部导航-->
+					<div class="CenterRightHeader">
+						<h2>Products</h2>
+						<span class="CenterRightPath"><a href=""><span>Home</span></a>><a href=""><span>Products</span></a></span>
+					</div>
+					<!-- 产品详情-->
+					<div class="Details">
+						<!--产品信息-->
+						<div class="product_intro">
+							<div class="product_intros_details">
+								<div class="product_name">
+									<span>Baby High Chair</span>
+								</div>
+								<div class="product_specification">
+									<ul>
+										<li>bItem No.:<span>KK000592</span></li>
+										<li>Qty/Ctn(PCS):<span>NA</span></li>
+										<li>Package Size:<span>NA</span></li>
+										<li>Carton Size:<span>NA</span></li>	
+									</ul>
+									<li>Where To Buy:<span>NA</span></li>	
+								</div>
+							</div>
+							<div class="product_intro_img">
+								<!--产品放大-->
+								<div class="product_intro_magnifybox">
+									<div class="product_intro_magnify">
+										<!--产品图-->
+										<div class="product_intro_bgimg">
+											<img src="img/product11.jpg" width="100%"/>
+										</div>
+										<div class="product_intro_imgs">
+											<div class="product_intro_imgs_left"><img src="images/bleft.png"/></div>
+											<div class="product_intro_smimg">
+												<ul>
+													<li><img src="img/product12.jpg" imgindex="0" width="100%"/></li>
+													<li><img src="img/product13.jpg" imgindex="1" width="100%"/></li>
+													<li><img src="img/product14.jpg" imgindex="2" width="100%"/></li>
+													<li><img src="img/product15.jpg" imgindex="3" width="100%"/></li>
+													<li><img src="img/product16.jpg" imgindex="4" width="100%"/></li>
+													<li><img src="img/product11.jpg" imgindex="5" width="100%"/></li>
+													<li><img src="img/product10.jpg" imgindex="6" width="100%"/></li>
+													<li><img src="img/product9.jpg" imgindex="7" width="100%"/></li>
+													<li><img src="img/product8.jpg" imgindex="8" width="100%"/></li>
+												</ul>
+											</div>
+											<div class="product_intro_imgs_right"><img src="images/bright.png"/></div>
+										</div>
+									</div>
+									<!--产品放大图-->
+									<div class="product_intro_magnifyimg">
+										<img src="" width="200%"/>
+									</div>
+								</div>
+								<!--产品放大-->
+							</div>
+						</div>
+						<!--产品介绍-->
+						<div class="product_description">
+							<p>About the product<br />
+								* Five points safety belt<br />
+								* removeable food-tray<br />
+								* easy to be removed,can be used as food-tray or writing table<br />
+								* funny cartoon printing<br />
+								* the seat can be shorten as a booster seat<br />
+								* suitable for 6--72 month baby<br />
+								This is a multi-functional hair chair can be used as food-tray or writing table.</p>
+						</div>
+						<!--产品图片-->
+						<div class="details_bottom">
+							<h3>Products</h3>
+							<div class="details_similarity">
+								<div class="details_similarity_img">
+									<img src="img/product18.jpg" alt="" width="100%"/>
+								</div>
+								<div class="details_similarity_img">
+									<img src="img/product18.jpg" alt="" width="100%"/>
+								</div>
+								<div class="details_similarity_img">
+									<img src="img/product18.jpg" alt="" width="100%"/>
+								</div>
+								<div class="details_similarity_img">
+									<img src="img/product18.jpg" alt="" width="100%"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--尾部-->
+		<iframe name="content_frame" width="100%" height="311"  src="footer_common.html" scrolling="NO"></iframe>
+	</body>
+
+	<script>
+        var app=angular.module('myApp',["ngSanitize"]);
+        app.directive('abTl',function(){
+            return{
+                templateUrl:'head_common.html',
+                restrict:'EACM',
+                replace:true,
+                link: function(scope) {
+                    var navArr = document.querySelectorAll(".navs .navi");
+                    var hider = document.querySelector(".hider");
+                    var Timer;
+                    for(var i = 1; i < navArr.length; i++) {
+                        navArr[i].index = i;
+                        navArr[i].onmouseenter = function() {
+                            hider.style.height = "150px";
+                            clearTimeout(Timer);
+                        };
+                        navArr[i].onmouseleave = function() {
+                            Timer = setTimeout(function() {
+                                hider.style.height = "0px";
+                            }, 200)
+
+                        };
+                        hider.onmouseover = function() {
+                            this.style.height = "150px";
+                            clearTimeout(Timer);
+                        }
+                        hider.onmouseout = function() {
+                            this.style.height = "0px";
+                        }
+                    }
+                }
+            }
+        })
+	</script>
+</html>

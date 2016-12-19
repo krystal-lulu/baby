@@ -100,5 +100,24 @@ $(function(){
     }
     $('.last').on('mousedown',lastClick);
     $('.next').on('mousedown',nextClick);
+    $.ajax({
+        url:'PHP/productTitle.php',
+        dataType:'json',
+        success:function(json){
+            console.log(json)
+            for(var i=0;i<json.length-1;i++){
+                $('.naviBox .navi').append(
+                    '<a href="product.html?'+json[i].type+'">'
+                        +'<div><img src="images/'+json[i].imgUrl+'" alt=""></div>'
+                        +'<p>'+json[i].title+'</p>'
+                    +'</a>'
+                    )
+            }
+            $('.naviBox .navi a').on('click',function(){
+                console.log($(this))
+            })
+
+        }
+    })
 
 });
