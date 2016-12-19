@@ -49,12 +49,12 @@ $(function(){
                 // console.log('sssss',json[0].type)
                 for(var i=0;i<json.length;i++){
                     $('.Details').append(
-                        '<div class="ProductLis">'
+                        '<a class="ProductLis" href="productpage.html">'
                         +'<div class="ProductLi">'
                         +'<img src="img/'+json[i].imageUrl+'" width="100%"/>'
                         +'</div>'
                         +'<div class="ProductName">'+json[i].intro+'</div>'
-                        +'</div>'
+                        +'</a>'
                     )
                 }
                 $('.CenterRight .link .page').empty();

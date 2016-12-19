@@ -169,7 +169,7 @@ section .center{
 .CenterRight .link .page .num{
 	color: #0068b7;
 	cursor: pointer;
-	margin:0 5px;
+	margin:0 2px;
 }
 .CenterRight .link .page .num.active{
 	color: lightgray;

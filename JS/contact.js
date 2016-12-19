@@ -1,15 +1,29 @@
-$(function () {
+$(function(){
     var clickleft=document.getElementsByClassName('clickleft');
     var rightcontent=document.getElementsByClassName('rightcontent');
-
+    // 黄底
+    var About_nobi2=document.getElementsByClassName('imgs2');
+    // 白底
+    var About_nobi=document.getElementsByClassName('imgs1');
+    var word=document.getElementsByClassName('word');
+    // var ab=document.querySelectorAll('.imgs1');
     for (var i = 0; i < clickleft.length; i++) {
         clickleft[i].index=i;
         clickleft[i].onclick=function(){
+            // index=this.index;
             for (var i = 0; i < rightcontent.length; i++) {
-                rightcontent[i].style.display='none';
+                rightcontent[i].className='rightcontent none '
+                About_nobi2[i].className='imgs2 none';
+                About_nobi[i].className='imgs1 block';
+                About_nobi[i].className='imgs1 block';
+                word[i].className='word activeblue';
             }
-            console.log(rightcontent[this.index])
-            rightcontent[this.index].style.display='block';
+            rightcontent[this.index].className='rightcontent block';
+            About_nobi2[this.index].className='imgs2 block';
+            // About_nobi[this.index].style.z-index=20;
+            About_nobi[this.index].className='imgs1 block';
+            About_nobi[this.index].className='imgs1 none';
+            word[this.index].className='word activewhite';
 
         }
     }
@@ -77,4 +91,6 @@ $(function () {
             }
         };
     }
+
+
 })

@@ -45,9 +45,18 @@ iframe{
 	text-align: center;
 	padding-top: 40px;
 }
+.About_nobi2{
+	display:none;
+}
+.About_visible{
+	display:block;
+}
 .About_star>p {
 	margin-top: -30px;
 	font-size: 20px
+}
+.About_left_sidebar>ul{
+	margin-top: 40px;
 }
 .About_left_sidebar>ul>a>li {
 	margin-left: 14px;
@@ -66,8 +75,10 @@ iframe{
 .About_left_sidebar>ul>a>li>span{
 	position: absolute;top: 0;left:50px;font-size:20px;color:#0068b5; ;
 }
-
-.About_nobi2{
+.About_content_Concepts,.About_content_Scoial {
+	display: none;
+}
+/*.About_nobi2{
 	opacity: 0;
 }
 .clickleft:hover .About_nobi2{
@@ -78,9 +89,9 @@ iframe{
 }
 .clickleft:hover .About_nobi{
 	opacity:0;
-}
+}*/
 /*右边显示内容 右边显示内容右边显示内容右边显示内容右边显示内容   */
-.About_content_Histroy {
+.About_content_Histroy,.About_content_Concepts,.About_content_Scoial{
 	float: right;
 	padding-top: 29px;
 	width: 700px;
@@ -127,6 +138,18 @@ iframe{
 	margin: 52px 0 150px 26px;
 	width: 507px;
 	height: 338px
+}
+
+.Abput_content_Concepts_img {
+	margin: 52px 0 50px 26px;
+	width: 450px;
+	height: 303px
+}
+
+.About_content_Scoial_img {
+	margin: 52px 0 50px 26px;
+	width: 523px;
+	height: 500px
 }
 .leftBottom {
 	width: 233px;

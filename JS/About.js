@@ -1,4 +1,67 @@
 $(function(){
+    var clickleft=document.getElementsByClassName('clickleft');
+        var rightcontent=document.getElementsByClassName('rightcontent');
+        // 黄底
+        var About_nobi2=document.getElementsByClassName('About_nobi2');
+        // 白底
+        var About_nobi=document.getElementsByClassName('About_nobi');
+        var span=document.getElementsByClassName('span');
+        var index=0;
+        var index2=0;
+
+        for (var i = 0; i < clickleft.length; i++) {
+            clickleft[i].index=i;
+
+            
+            
+            clickleft[i].onmouseover=function(){
+                index2=this.index;
+                var block=true;
+                for (var i = 0; i < rightcontent.length; i++) {
+                    About_nobi2[i].style.display='none';
+                    About_nobi[i].style.display='block  ';
+                    span[i].style.color='#0068b5';
+                }
+                About_nobi2[this.index].style.display='block';
+                About_nobi2[index].style.display='block';
+                About_nobi[this.index].style.display='none';
+                span[this.index].style.color='white';
+                // ev.cancelBubble=true;    
+            }
+            clickleft[i].onmouseout=function(){
+                if(index==this.index){
+                    return
+                }
+                for (var i = 0; i < rightcontent.length; i++) {
+                    About_nobi2[i].style.display='none';
+                    About_nobi[i].style.display='block';
+                    span[i].style.color='#0068b5';
+                }
+                About_nobi2[index].style.display='block';
+                About_nobi2[index2].style.display='none';
+                // console.log("out"+index2);
+                // About_nobi2[this.index].style.display='block';
+                About_nobi[this.index].style.display='block';
+                span[this.index].style.color='#0068b5';
+                // ev.cancelBubble=true;
+            }
+            clickleft[i].onclick=function(){
+                index=this.index;   
+                for (var i = 0; i < rightcontent.length; i++) {
+                    rightcontent[i].style.display='none';
+                    About_nobi2[i].style.display='none';
+                    About_nobi[i].style.display='block';
+                    span[i].style.color='#0068b5';
+                }
+                rightcontent[this.index].style.display='block';
+                About_nobi2[this.index].style.display='block';
+                About_nobi[this.index].style.display='none';
+                span[this.index].style.color='white';
+            }
+        }
+
+
+
     var turnHide = document.querySelector(".leftBottom .turnBody .turnHide");
     var turnAll = document.querySelectorAll(" .leftBottom .turnBody .turnHide .turnPart");
 //----------------------------------轮播图--------------------------------
@@ -61,3 +124,6 @@ $(function(){
         };
     }
 })
+
+
+   
