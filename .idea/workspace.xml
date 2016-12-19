@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3d71d52e-9087-4285-bf28-d8dd3f6bd800" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/contact.css" afterPath="$PROJECT_DIR$/CSS/contact.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/head_common.css" afterPath="$PROJECT_DIR$/CSS/head_common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/home.css" afterPath="$PROJECT_DIR$/CSS/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/About.js" afterPath="$PROJECT_DIR$/JS/About.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/contact.js" afterPath="$PROJECT_DIR$/JS/contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/head_common.js" afterPath="$PROJECT_DIR$/JS/head_common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/news.js" afterPath="$PROJECT_DIR$/JS/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/product.js" afterPath="$PROJECT_DIR$/JS/product.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/product.php" afterPath="$PROJECT_DIR$/PHP/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/head_common.html" afterPath="$PROJECT_DIR$/head_common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,31 +54,37 @@
       <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="174" column="4" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="4" />
+            <state relative-caret-position="309">
+              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="28" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
-                <element signature="e#2529#7211#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contact.html">
+      <file leaf-file-name="product.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PHP/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="120">
+              <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+              <folding>
+                <marker date="1482120070000" expanded="true" signature="149:187" ph="SELECT * FRO... product" />
+                <marker date="1482120070000" expanded="true" signature="221:254" ph="SELECT * FRO... product" />
+                <marker date="1482120070000" expanded="true" signature="221:255" ph="SELECT * FRO... product" />
+                <marker date="1482120070000" expanded="true" signature="221:271" ph="SELECT * FRO... product" />
+                <marker date="1482120070000" expanded="true" signature="221:281" ph="SELECT * FRO... product" />
+                <marker date="1482120070000" expanded="true" signature="221:289" ph="SELECT * FRO... product" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/contact.css">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="291" column="30" lean-forward="true" selection-start-line="291" selection-start-column="30" selection-end-line="291" selection-end-column="30" />
+            <state relative-caret-position="-244">
+              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -154,13 +147,14 @@
         <option value="$PROJECT_DIR$/JS/news.js" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/product.html" />
-        <option value="$PROJECT_DIR$/PHP/product.php" />
-        <option value="$PROJECT_DIR$/JS/product.js" />
-        <option value="$PROJECT_DIR$/head_common.html" />
         <option value="$PROJECT_DIR$/joinUs.html" />
         <option value="$PROJECT_DIR$/JS/joinUs.js" />
-        <option value="$PROJECT_DIR$/CSS/contact.css" />
         <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/head_common.html" />
+        <option value="$PROJECT_DIR$/feedingcare.html" />
+        <option value="$PROJECT_DIR$/CSS/contact.css" />
+        <option value="$PROJECT_DIR$/JS/product.js" />
+        <option value="$PROJECT_DIR$/PHP/product.php" />
       </list>
     </option>
   </component>
@@ -172,8 +166,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="157" />
-    <option name="y" value="166" />
+    <option name="x" value="178" />
+    <option name="y" value="23" />
     <option name="width" value="1511" />
     <option name="height" value="822" />
   </component>
@@ -234,20 +228,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baby" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -266,10 +246,7 @@
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.joinUs.html">
-    <configuration default="false" name="productTitle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/productTitle.php">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.feedingcare.html">
     <configuration default="false" name="product.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP/product.php">
       <method />
     </configuration>
@@ -280,6 +257,9 @@
       <method />
     </configuration>
     <configuration default="false" name="joinUs.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/baby/joinUs.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="feedingcare.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/baby/feedingcare.html">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -339,19 +319,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.product.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.product.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.joinUs.html" />
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.product.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.product.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.joinUs.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.feedingcare.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.joinUs.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.product.html" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.product.php" />
-        <item index="4" class="java.lang.String" itemvalue="PHP Script.productTitle.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.feedingcare.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.joinUs.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.product.html" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.product.php" />
       </list>
     </recent_temporary>
   </component>
@@ -369,15 +349,15 @@
       <workItem from="1481936680379" duration="8119000" />
       <workItem from="1481944974780" duration="20931000" />
       <workItem from="1482109465962" duration="3121000" />
-      <workItem from="1482112721200" duration="4276000" />
+      <workItem from="1482112721200" duration="5967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55513000" />
+    <option name="totallyTimeSpent" value="57204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="157" y="166" width="1511" height="822" extended-state="0" />
+    <frame x="178" y="23" width="1511" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -439,7 +419,6 @@
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2529#7211#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -488,7 +467,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2529#7211#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -498,11 +476,12 @@
         <state relative-caret-position="270">
           <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding>
-            <marker date="1482116780000" expanded="true" signature="124:162" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:229" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:242" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:252" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:260" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="149:187" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:254" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:255" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:271" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:281" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:289" ph="SELECT * FRO... product" />
           </folding>
         </state>
       </provider>
@@ -513,7 +492,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2529#7211#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,14 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -753,17 +723,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="174" column="4" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#2529#7211#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,41 +742,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/product.php">
+    <entry file="file://$PROJECT_DIR$/CSS/feedingcare.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding>
-            <marker date="1482116780000" expanded="true" signature="124:162" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:229" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:242" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:252" ph="SELECT * FRO... product" />
-            <marker date="1482116780000" expanded="true" signature="196:260" ph="SELECT * FRO... product" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feedingcare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/head_common.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="440">
+          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/contact.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="291" column="30" lean-forward="true" selection-start-line="291" selection-start-column="30" selection-end-line="291" selection-end-column="30" />
+        <state relative-caret-position="101">
+          <caret line="254" column="17" lean-forward="true" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="-540">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <marker date="1482120070000" expanded="true" signature="149:187" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:254" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:255" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:271" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:281" ph="SELECT * FRO... product" />
+            <marker date="1482120070000" expanded="true" signature="221:289" ph="SELECT * FRO... product" />
+          </folding>
         </state>
       </provider>
     </entry>
