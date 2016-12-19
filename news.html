@@ -6,11 +6,15 @@
 		<title>konig Kids</title>
 		<link rel="stylesheet" type="text/css" href="css/head_common.css" />
 		<link rel="stylesheet" type="text/css" href="css/news.css" />
+		<script src="JS/jquery.min.js"></script>
+		<script src="JS/angular.min.js"></script>
+		<script src="JS/angular-sanitize.js"></script>
+		<script src="JS/news.js" type="text/javascript"></script>
 	</head>
 
-	<body>
+	<body ng-app="myApp">
 		<!-----------------------------头部----------------------------->
-		<iframe width="100%" height="208" src="head_common.html" scrolling="no"></iframe>
+		<ab-Tl></ab-Tl>
 		<!----------------------------中部---------------------------->
 		<div class="joinMiddle">
 			<div class="joinContent">
@@ -234,5 +238,39 @@
 		<!------------------------------底部------------------------------>
 		<iframe width="100%" height="311" src="footer_common.html" scrolling="no"></iframe>
 	</body>
-	<script src="js/news.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+        var app=angular.module('myApp',["ngSanitize"]);
+        app.directive('abTl',function(){
+            return{
+                templateUrl:'head_common.html',
+                restrict:'EACM',
+                replace:true,
+                link: function(scope) {
+                    var navArr = document.querySelectorAll(".navs .navi");
+                    var hider = document.querySelector(".hider");
+                    var Timer;
+                    for(var i = 1; i < navArr.length; i++) {
+//                        navArr[i].navIndex = i;
+                        navArr[i].onmouseenter = function() {
+                            hider.style.height = "150px";
+                            clearTimeout(Timer);
+                        };
+                        navArr[i].onmouseleave = function() {
+                            Timer = setTimeout(function() {
+                                hider.style.height = "0px";
+                            }, 200)
+
+                        };
+                        hider.onmouseover = function() {
+                            this.style.height = "150px";
+                            clearTimeout(Timer);
+                        }
+                        hider.onmouseout = function() {
+                            this.style.height = "0px";
+                        }
+                    }
+                }
+            }
+        })
+	</script>
 </html>

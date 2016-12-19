@@ -1,208 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>contact</title>
-	<link rel="stylesheet" type="text/css" href="CSS/contact.css">
-</head>
-<body>
-		<IFRAME NAME="content_frame" width="100%" height="208"  SRC="head_common.html" SCROLLING="NO"></IFRAME> 
-		<!-- about 正文 -->
-		<div class="About_all">
-			<div class="About_box">
-				<!-- 左侧边栏 -->
-				<div class="About_left_sidebar">
-					<!-- abous us -->
-					<div class="About_star">
-						<img src="images/star.png" alt="">
-						<p>Contact us</p>
+	<head>
+		<meta charset="UTF-8">
+		<title>contact</title>
+		<link rel="stylesheet" type="text/css" href="CSS/contact.css">
+		<link rel="stylesheet" href="CSS/head_common.css"/>
+		<script src="JS/jquery.min.js"></script>
+		<script src="JS/angular.min.js"></script>
+		<script src="JS/angular-sanitize.js"></script>
+		<script type="text/javascript" src='JS/contact.js'></script>
+	</head>
+	<body ng-app="myApp">
+			<!-- about 正文 -->
+			<ab-Tl></ab-Tl>
+			<div class="About_all">
+				<div class="About_box">
+					<!-- 左侧边栏 -->
+					<div class="About_left_sidebar">
+						<!-- abous us -->
+						<div class="About_star">
+							<img src="images/star.png" alt="">
+							<p>Contact us</p>
+						</div>
+						<ul>
+							<a href="##" class="clickleft" >
+								<li >
+									<img src="images/nobi2.png" alt="" class="About_nobi2 About_visible">
+									<img src="images/nobi.png" alt="" class="About_nobi About_heidden">
+									<span id="About_sapn" >Contact info</span>
+								</li>
+							</a>
+							<a href="##" class="clickleft">
+								<li  >
+									<img src="images/nobi2.png" alt="" class="About_nobi2">
+									<img src="images/nobi.png" alt="" class="About_nobi">
+									<span >Contact Online</span>
+								</li>
+							</a>
+						</ul>
+						<!-- 轮播图  -->
+						<div class="leftBottom">
+							<div class="turnTitle">New Products
+								<div class="logo"></div>
+							</div>
+							<!-- 轮播主体 -->
+							<div class="turnBody">
+								<div class="turnHide">
+									<div class="turnPart">
+										<img src="img/product30.jpg" class="turnPic"/>
+										<div class="turnContent1">
+											INFANT-TO TODDLER ROCKER
+										</div>
+										<div class="turnContent2">
+											About the product*An activity gym and ball pit in one*36 c...
+										</div>
+										<div class="readMore">
+											Read more
+											<a href="#" class="moreRight"></a>
+										</div>
+									</div>
+									<div class="turnPart">
+										<img src="img/product30.jpg" class="turnPic"/>
+										<div class="turnContent1">
+											INFANT-TO TODDLER ROCKER
+										</div>
+										<div class="turnContent2">
+											About the product*An activity gym and ball pit in one*36 c...
+										</div>
+										<div class="readMore">
+											Read more
+											<a href="#" class="moreRight"></a>
+										</div>
+									</div>
+									<div class="turnPart">
+										<img src="img/product30.jpg" class="turnPic"/>
+										<div class="turnContent1">
+											INFANT-TO TODDLER ROCKER
+										</div>
+										<div class="turnContent2">
+											About the product*An activity gym and ball pit in one*36 c...
+										</div>
+										<div class="readMore">
+											Read more
+											<a href="#" class="moreRight"></a>
+										</div>
+									</div>
+									<div class="turnPart">
+										<img src="img/product30.jpg" class="turnPic"/>
+										<div class="turnContent1">
+											INFANT-TO TODDLER ROCKER
+										</div>
+										<div class="turnContent2">
+											About the product*An activity gym and ball pit in one*36 c...
+										</div>
+										<div class="readMore">
+											Read more
+											<a href="#" class="moreRight"></a>
+										</div>
+									</div>
+									<div class="turnPart">
+										<img src="img/product30.jpg" class="turnPic"/>
+										<div class="turnContent1">
+											INFANT-TO TODDLER ROCKER
+										</div>
+										<div class="turnContent2">
+											About the product*An activity gym and ball pit in one*36 c...
+										</div>
+										<div class="readMore">
+											Read more
+											<a href="#" class="moreRight"></a>
+										</div>
+									</div>
+								</div>
+								<div class="turnBtn leftBtn"></div>
+								<div class="turnBtn rightBtn"></div>
+							</div>
+						</div>
 					</div>
-					<ul>
-						<a href="##" class="clickleft" >
-							<li >
-								<img src="images/nobi2.png" alt="" class="About_nobi2">
-								<img src="images/nobi.png" alt="" class="About_nobi">
-								<span  >Contact info</span>
-							</li>
-						</a>
-						<a href="##" class="clickleft">
-							<li  >
-								<img src="images/nobi2.png" alt="" class="About_nobi2">
-								<img src="images/nobi.png" alt="" class="About_nobi">
-								<span >Contact Online</span>
-							</li>
-						</a>
-					</ul>
-					<!-- 轮播图  -->
-					<div class="leftBottom">
-						<div class="turnTitle">New Products
-							<div class="logo"></div>
+					<!-- 右侧内容显示去  +++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+					<div class="About_content">
+						<!-- <img src="img/bg.png" alt=""> -->
+						<div  class="About_content_Histroy rightcontent">
+							<div class="About_content_top">
+								<span>Contact info</span>
+								<span >
+									<a href="">Home</a> >
+									<a href="">Contact info</a>
+								</span>
+							</div>
+							<br><br><br>
+							<div class="Contact_KONIG">
+								<strong>KONIG KIDS(SHENZHEN) LIMITED</strong><br>
+								<span>Addres: E BLOCK,TAOJINDI TOWER,TENGLONG ROAD,LONGHUA DISTRICT,SHENZHEN,CHINA</span><br>
+								 <span>( MTR LINE 4,SHANGTANG STATION EXIT A)</span><br><br>
+								<span>TEL: +86 (0)755 23769644 </span><br>
+								<span>Fax: +86 (0)755 23240282</span><br>
+								<span>Skype:</span><br>
+								<span>Wechat:</span><br>
+								<span>what's App: +86 13502726366</span><br>
+								<span>E-mail: <a href="">konig-kids@tinbotoys.com</a> </span><br>
+							</div>
+							<div class="contact_map">
+								<IFRAME NAME="content_frame" width="530" height="340"  SRC="mapApi.html" SCROLLING="NO"></IFRAME>
+							</div>
 						</div>
-						<!-- 轮播主体 -->
-						<div class="turnBody">
-							<div class="turnHide">
-								<div class="turnPart">
-									<img src="img/product30.jpg" class="turnPic"/>
-									<div class="turnContent1">
-										INFANT-TO TODDLER ROCKER
-									</div>
-									<div class="turnContent2">
-										About the product*An activity gym and ball pit in one*36 c...
-									</div>
-									<div class="readMore">
-										Read more
-										<a href="#" class="moreRight"></a>
-									</div>
+						<!--Concepts*******************************************  -->
+						<div  class ="About_content_Concepts rightcontent">
+							<div class="About_content_top">
+								<span>Concepts</span>
+								<span>
+									<a href="">Home</a> >
+									<a href="">Contact Online</a>
+								</span>
+							</div>
+							<br><br><br>
+							<form class="Contact_table" action="" method="">
+								<div>
+									<span>Full Nmae:</span><br>
+									<input type="text">	  &nbsp; &nbsp; *
 								</div>
-								<div class="turnPart">
-									<img src="img/product30.jpg" class="turnPic"/>
-									<div class="turnContent1">
-										INFANT-TO TODDLER ROCKER
-									</div>
-									<div class="turnContent2">
-										About the product*An activity gym and ball pit in one*36 c...
-									</div>
-									<div class="readMore">
-										Read more
-										<a href="#" class="moreRight"></a>
-									</div>
-								</div>
-								<div class="turnPart">
-									<img src="img/product30.jpg" class="turnPic"/>
-									<div class="turnContent1">
-										INFANT-TO TODDLER ROCKER
-									</div>
-									<div class="turnContent2">
-										About the product*An activity gym and ball pit in one*36 c...
-									</div>
-									<div class="readMore">
-										Read more
-										<a href="#" class="moreRight"></a>
-									</div>
-								</div>
-								<div class="turnPart">
-									<img src="img/product30.jpg" class="turnPic"/>
-									<div class="turnContent1">
-										INFANT-TO TODDLER ROCKER
-									</div>
-									<div class="turnContent2">
-										About the product*An activity gym and ball pit in one*36 c...
-									</div>
-									<div class="readMore">
-										Read more
-										<a href="#" class="moreRight"></a>
-									</div>
-								</div>
-								<div class="turnPart">
-									<img src="img/product30.jpg" class="turnPic"/>
-									<div class="turnContent1">
-										INFANT-TO TODDLER ROCKER
-									</div>
-									<div class="turnContent2">
-										About the product*An activity gym and ball pit in one*36 c...
-									</div>
-									<div class="readMore">
-										Read more
-										<a href="#" class="moreRight"></a>
-									</div>
-								</div>
-							</div>
-							<div class="turnBtn leftBtn"></div>
-							<div class="turnBtn rightBtn"></div>
-						</div>
-					</div>
-				</div>
-				<!-- 右侧内容显示去  +++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-				<div class="About_content">
-					<!-- <img src="img/bg.png" alt=""> -->
-					<div  class="About_content_Histroy rightcontent">
-						<div class="About_content_top">
-							<span>Contact info</span>
-							<span >
-								<a href="">Home</a> >
-								<a href="">Contact info</a> 
-							</span>
-						</div>
-						<br><br><br>
-						<div class="Contact_KONIG">
-							<strong>KONIG KIDS(SHENZHEN) LIMITED</strong><br>
-							<span>Addres: E BLOCK,TAOJINDI TOWER,TENGLONG ROAD,LONGHUA DISTRICT,SHENZHEN,CHINA</span><br>
-							 <span>( MTR LINE 4,SHANGTANG STATION EXIT A)</span><br><br>
-							<span>TEL: +86 (0)755 23769644 </span><br>
-							<span>Fax: +86 (0)755 23240282</span><br>
-							<span>Skype:</span><br>
-							<span>Wechat:</span><br>
-							<span>what's App: +86 13502726366</span><br>
-							<span>E-mail: <a href="">konig-kids@tinbotoys.com</a> </span><br>
-						</div>
-						<div class="contact_map">
-							<IFRAME NAME="content_frame" width="530" height="340"  SRC="mapApi.html" SCROLLING="NO"></IFRAME>
-						</div> 
-					</div>
-					<!--Concepts*******************************************  -->
-					<div  class ="About_content_Concepts rightcontent">
-						<div class="About_content_top">
-							<span>Concepts</span>
-							<span>
-								<a href="">Home</a> >
-								<a href="">Contact Online</a>
-							</span>
-						</div>
-						<br><br><br>
-						<form class="Contact_table" action="" method="">
-							<div>
-								<span>Full Nmae:</span><br>
-								<input type="text">	  &nbsp; &nbsp; *
-							</div>
-								
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text"> &nbsp;&nbsp; *
-							</div>
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">   &nbsp;&nbsp;    *
-							</div> 
-								
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">   &nbsp;&nbsp; *
-							</div>
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">
-							</div>
-								
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">
-							</div>
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">
-							</div>
-								
-							<div>
-								<span>Phone Number:</span><br>
-								<input type="text">
-							</div>
 
-							<div class="Contact_textarea">
-								<span>fack bvack:</span><br>
-								<textarea>
-									
-								</textarea>
-							</div>
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text"> &nbsp;&nbsp; *
+								</div>
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">   &nbsp;&nbsp;    *
+								</div>
 
-							<ul class="Contact_submit">
-								<li><input type="submit" value="Submit" class="Contact_submit submit1"></li>
-								<li><input type="button" value="Rewrite" class="Contact_submit submit2"></li>
-							</ul>
-					</form>
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">   &nbsp;&nbsp; *
+								</div>
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">
+								</div>
+
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">
+								</div>
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">
+								</div>
+
+								<div>
+									<span>Phone Number:</span><br>
+									<input type="text">
+								</div>
+
+								<div class="Contact_textarea">
+									<span>fack bvack:</span><br>
+									<textarea>
+
+									</textarea>
+								</div>
+
+								<ul class="Contact_submit">
+									<li><input type="submit" value="Submit" class="Contact_submit submit1"></li>
+									<li><input type="button" value="Rewrite" class="Contact_submit submit2"></li>
+								</ul>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-		<IFRAME NAME="content_frame" width="100%" height="311"  SRC="footer_common.html" SCROLLING="NO"></IFRAME>
-</body>
-<script type="text/javascript" src='JS/contact.js'></script>
+			<IFRAME NAME="content_frame" width="100%" height="311"  SRC="footer_common.html" SCROLLING="NO"></IFRAME>
+			</div>
+	</body>
+	<script>
+        var app=angular.module('myApp',["ngSanitize"]);
+        app.directive('abTl',function(){
+            return{
+                templateUrl:'head_common.html',
+                restrict:'EACM',
+                replace:true,
+                link: function(scope) {
+                    var navArr = document.querySelectorAll(".navs .navi");
+                    var hider = document.querySelector(".hider");
+                    var Timer;
+                    for(var i = 1; i < navArr.length; i++) {
+                        navArr[i].navIndex = i;
+                        navArr[i].onmouseenter = function() {
+                            hider.style.height = "150px";
+                            clearTimeout(Timer);
+                        };
+                        navArr[i].onmouseleave = function() {
+                            Timer = setTimeout(function() {
+                                hider.style.height = "0px";
+                            }, 200)
+
+                        };
+                        hider.onmouseover = function() {
+                            this.style.height = "150px";
+                            clearTimeout(Timer);
+                        }
+                        hider.onmouseout = function() {
+                            this.style.height = "0px";
+                        }
+                    }
+                }
+            }
+        })
+	</script>
+
 </html>

@@ -95,7 +95,7 @@
     height: 202px;
     margin:0 auto;
 }
-.navi{
+.main .naviBox .navi{
     position: relative;
     overflow: hidden;
     top:50%;

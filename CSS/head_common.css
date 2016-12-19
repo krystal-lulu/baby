@@ -138,6 +138,7 @@ header .hider{
 	position:absolute;
 	top:207px;
 	z-index: 1000;
+	background-color: #fff;
 }
 
 header .hider .hiderMain{

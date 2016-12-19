@@ -1,76 +1,65 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="CSS/head_common.css"/>
-	</head>
-	<body>
-		
-		<!--头部-->
-		<header>
-			<!--底层条-->
-			<div class="hide"></div>
-			<!--头部主体-->
-			<div class="main">
-				<div class="content">
-					<!--品牌logo-->
-					<div class="logo">
-						<img src="images/logo.png"/>
-					</div>
-					<!--Follow us-->
-					<div class="follow">Follow Us</div>
-					<!--小logo-->
-					<a href="#"><img src="images/date1.png" class="littleLogo littleLogo-1"/></a>
-					<a href="#"><img src="images/date2.png" class="littleLogo littleLogo-2"/></a>
-					<a href="#"><img src="images/date3.png" class="littleLogo littleLogo-3"/></a>	
-					
-					<!--输入框-->
-					<div class="search">
-						<input type="text" placeholder="Seacher"/>
-						<a href="#"><img src="images/search.png"/></a>
-					</div>
-					
-					<!--导航栏-->
-					<div class="navs">
-						<div class="boxradius boxradius-one"></div>
-						<div class="navi"><a href="#">Home</a></div>
-						<div class="navi"><a href="#">About Us</a></div>
-						<div class="navi"><a href="#">Products</a></div>
-						<div class="navi"><a href="#">News</a></div>
-						<div class="navi"><a href="#">Feeding Care</a></div>
-						<div class="navi"><a href="#">Contact Us</a></div>
-						<div class="navi"><a href="#">Join Us</a></div>
-						<div class="boxradius boxradius-two"></div>
-					</div>
-				</div>
+<header ng-click="toggleContent()">
+	<!--底层条-->
+	<div class="hide"  ></div>
+	<!--头部主体-->
+	<div class="main">
+		<div class="content">
+			<!--品牌logo-->
+			<div class="logo">
+				<img src="images/logo.png"/>
 			</div>
-				<!--白色隐藏菜单-->
-				<div class="hider">
-					<div class="hiderMain">
-						<div class="hiderWide">
-							<div class="log"></div>
-							<a href="#">History History</a>
-						</div>
-						<div class="hiderWide">
-							<div class="log"></div>
-							<a href="#">History</a>
-						</div>
-						<div class="hiderWide">
-							<div class="log"></div>
-							<a href="#">History</a>
-						</div>
-						<div class="hiderWide">
-							<div class="log"></div>
-							<a href="#">History</a>
-						</div>
-						<div class="hiderWide">
-							<div class="log"></div>
-							<a href="#">History</a>
-						</div>
-					</div>	
-				</div>
-		</header>
-		<script src="JS/head_common.js"></script>
-	</body>
-</html>
+			<!--Follow us-->
+			<div class="follow">Follow Us</div>
+			<!--小logo-->
+			<a href="#"><img src="images/date1.png" class="littleLogo littleLogo-1"/></a>
+			<a href="#"><img src="images/date2.png" class="littleLogo littleLogo-2"/></a>
+			<a href="#"><img src="images/date3.png" class="littleLogo littleLogo-3"/></a>
+
+			<!--输入框-->
+			<div class="search">
+				<input type="text" placeholder="Seacher"/>
+				<a href="#"><img src="images/search.png"/></a>
+			</div>
+
+			<!--导航栏-->
+			<div class="navs">
+				<div class="boxradius boxradius-one"></div>
+				<div class="navi"><a href="home.html">Home</a></div>
+				<div class="navi"><a href="about.html">About Us</a></div>
+				<div class="navi"><a href="product.html">Products</a></div>
+				<div class="navi"><a href="news.html">News</a></div>
+				<div class="navi"><a href="#">Feeding Care</a></div>
+				<div class="navi"><a href="contact.html">Contact Us</a></div>
+				<div class="navi"><a href="joinUs.html">Join Us</a></div>
+				<div class="boxradius boxradius-two"></div>
+			</div>
+		</div>
+	</div>
+	<!--白色隐藏菜单-->
+	<div class="hider">
+		<div class="hiderMain">
+			<div class="hiderWide">
+				<div class="log"></div>
+				<a href="#">History History</a>
+			</div>
+			<div class="hiderWide">
+				<div class="log"></div>
+				<a href="#">History</a>
+			</div>
+			<div class="hiderWide">
+				<div class="log"></div>
+				<a href="#">History</a>
+			</div>
+			<div class="hiderWide">
+				<div class="log"></div>
+				<a href="#">History</a>
+			</div>
+			<div class="hiderWide">
+				<div class="log"></div>
+				<a href="#">History</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+

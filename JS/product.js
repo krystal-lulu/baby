@@ -7,10 +7,8 @@ $(function(){
     var firstIndex=1;
     var pageNum=1;
     var newType='';
-    // pageClick();//product跳转判断放开
+    pageClick();//product跳转判断放开
     function pageClick(e){
-        // console.log('e    ',typeof (e))
-        console.log('dddddddddd',pageNum)
         var evobj=window.event||e;
         _this=evobj.target;
         if(typeof (e)=="string"){
@@ -32,8 +30,12 @@ $(function(){
             firstIndex=parseInt(nums1.join(''));
             // console.log(firstIndex);
             //获取所点击的页数
-            pageNum=$(_this).parent().text().split('|')[1];
-            // console.log(pageNum)
+            if(!$(_this).parent().text().split('|')[1]){
+                pageNum=1;
+            }else{
+                pageNum=$(_this).parent().text().split('|')[1];
+
+            }
         }
         $('.Details').empty();
         $.ajax({
@@ -65,8 +67,6 @@ $(function(){
                     },
                     dataType:"json",
                     success:function(info){
-                        // console.log(info)
-                        console.log('pageNum',pageNum)
                         var message=parseInt(info.page);
                             if(message>=10){
                                     //页面向右的偏移量
@@ -148,7 +148,6 @@ $(function(){
                                     )
                             }
                             else{
-                                console.log(pageNum)
                                     for(var i=firstIndex;i<=message;i++) {
                                         if (i == pageNum) {
                                             //点击的页号变色
@@ -168,7 +167,6 @@ $(function(){
                                     )
                              }
                         }
-
                 })
             }
         })
@@ -190,14 +188,12 @@ $(function(){
                         +'</div>'
                         +'<div class="NavHid" ></div>'
                     +'</div>'
-
                 )
             }
             $('.ProductsNav .listBox').on('click',function(e) {
                 var evObj=window.event||e;
                 var target=evObj.currentTarget;
                 var type=$(target).find('.ProductsList').attr('id');
-                // console.log('type',type)
                 pageClick(type);
                 $.ajax({
                     url:'PHP/titleList.php',
