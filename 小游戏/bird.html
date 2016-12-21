@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <style type="text/css">
+        .box{
+            width: 343px;
+            height: 480px;
+            background-image:url('images/bg.jpg');
+            margin:0 auto;
+            overflow: hidden;
+            position:relative;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -o-user-select:none;
+        }
+        .scoreBox{
+            position: absolute;
+            left: 50%;
+            top:50px;
+            z-index: 1;
+
+        }
+        .scoreBox img{
+            width: 28px;
+        }
+        .btn{
+            position: absolute;
+            top:60%;
+            left: 50%;
+            margin-left:-110px;
+        }
+        .start,.submit{
+            width: 85px;
+            height: 29px;
+        }
+        .submit{
+            margin-left: 50px;
+        }
+        .headBox{
+            position:absolute;
+            left: 55px;
+            top:115px;
+            animation: headBoxmove 2s linear infinite;
+        }
+        /*动画反向播放 animation-direction: alternate 动画反向播放不需要写百分比动画*/
+        @-webkit-keyframes headBoxmove{
+            0%{
+                    top:100px;
+            }
+            50%{
+                    top:130px;
+            }
+            100%{
+                    top:100px;
+            }
+        }
+        .birdStart{
+            position: absolute;
+            top:20px;
+            right: 0px;
+            width: 40px;
+            height: 26px;
+            animation: birdChange 0.3s linear infinite;
+        }
+        @-webkit-keyframes birdChange{
+            0%{
+                background-image:url('images/bird0.png');
+            }
+            100%{
+                background-image:url('images/bird1.png');
+            }
+        }
+        .grass{
+            background-image:url('images/slider.jpg');
+            width: 686px;
+            height: 14px;
+            position: absolute;
+            top:422px;
+        }
+        .bird{
+            position: absolute;
+            top:200px;
+            left: 50px;
+            transition: 0.2s all linear;
+            -moz-transition: 0.2s all linear;
+        }
+        .pipeBox{
+            width: 62px;
+            height: 422.39px;
+            position: absolute;
+            top:0;
+            left: 400px;
+        }
+        .uppipe{
+        /*position: absolute;*/
+        /*top: 0;*/
+            margin-bottom:122px;
+        }
+        .uppipe img{
+            height: 60px;
+        }
+        /*.downpipe{*/
+        /*position: absolute;*/
+        /*bottom: 0;*/
+        /*}*/
+        .gameover{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin-left: -110px;
+        }
+        .ok{
+             position: absolute;
+            top:60%;
+            left: 50%;
+            width: 96px;
+            margin-left:-48px;
+        }
+        </style>
+        <script type="text/javascript" src='js/bird.js'></script>
+    </head>
+    <body>
+    <!-- 可以使用css实现的效果不要使用js js特别耗性能 -->
+     <div class="box"></div>
+    </body>
+</html>
