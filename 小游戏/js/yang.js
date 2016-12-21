@@ -145,6 +145,7 @@ window.onload=function(){
 		yang.onmouseup=function(){
 			console.log("onmouseup")
 			document.onmousemove=null;
+		}
 
 }
 
